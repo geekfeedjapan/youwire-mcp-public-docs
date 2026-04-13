@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — YouWire MCP</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a2e;
+      background: #f8f9fa;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      color: white;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 32px; margin-bottom: 8px; }
+    header p { opacity: 0.75; font-size: 15px; }
+    header a { color: #e94560; text-decoration: none; }
+    header a:hover { text-decoration: underline; }
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px 80px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: #1a1a2e;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    h3 { font-size: 16px; font-weight: 600; margin: 20px 0 8px; color: #333; }
+    p { margin-bottom: 12px; color: #444; font-size: 15px; }
+    ul { margin: 8px 0 12px 20px; color: #444; font-size: 15px; }
+    li { margin-bottom: 6px; }
+    .updated {
+      background: #f0f4ff;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 32px;
+    }
+    .contact-box {
+      background: #1a1a2e;
+      color: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 32px;
+    }
+    .contact-box h3 { color: white; margin-top: 0; }
+    .contact-box p { color: rgba(255,255,255,0.8); margin-bottom: 6px; }
+    .contact-box a { color: #e94560; }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: #888;
+      font-size: 14px;
+      border-top: 1px solid #e9ecef;
+    }
+    footer a { color: #e94560; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>YouWire MCP Server · <a href="index.html">← Back to Documentation</a></p>
+</header>
+
+<main>
+
+  <div class="updated">
+    Last updated: April 2026 · Effective date: April 2026
+  </div>
+
+  <div class="card">
+    <h2>1. Overview</h2>
+    <p>
+      This Privacy Policy describes how Geekfeed Inc. ("we", "our", or "us") handles data
+      in connection with the <strong>YouWire MCP Server</strong> — a Model Context Protocol server
+      that enables Claude to access the YouWire compliance call recording platform.
+    </p>
+    <p>
+      YouWire MCP acts as a secure bridge between Claude and your organization's YouWire account.
+      We are committed to protecting your privacy and handling data responsibly in accordance with
+      Japan's <strong>Act on the Protection of Personal Information (APPI)</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2. Data the MCP Server Accesses</h2>
+    <p>When you connect Claude to YouWire MCP, the server may access the following data
+    from your YouWire account, <strong>only when explicitly requested by you</strong>:</p>
+
+    <h3>Call Recording Metadata</h3>
+    <ul>
+      <li>Date, time, and duration of calls</li>
+      <li>Call direction (incoming / outgoing / meeting / web meeting / upload)</li>
+      <li>Recording source (mobile, landline, Teams, web conferencing, in-person)</li>
+      <li>Phone numbers of local and remote parties</li>
+      <li>Display names of local and remote parties</li>
+      <li>Group name and user name associated with the recording</li>
+      <li>Protection status flag</li>
+      <li>Download datetime (if the recording has been downloaded)</li>
+      <li>File size of uploaded recordings</li>
+      <li>Record creation and update timestamps</li>
+    </ul>
+
+    <h3>Location Data</h3>
+    <ul>
+      <li>Latitude and longitude coordinates associated with mobile recordings (when available)</li>
+      <li>Location string (when available)</li>
+    </ul>
+
+    <h3>Transcription Data</h3>
+    <ul>
+      <li>Speech recognition transcripts of call recordings (when speech recognition is enabled)</li>
+      <li>Timestamped transcript segments with speaker direction indicators</li>
+    </ul>
+
+    <h3>Compliance Tags</h3>
+    <ul>
+      <li>Tag titles, content text, category names and IDs</li>
+      <li>Tag creation and update timestamps</li>
+    </ul>
+
+    <h3>User Account Information</h3>
+    <ul>
+      <li>Username and user ID</li>
+      <li>Permission level and access scope (operating range)</li>
+      <li>Group memberships</li>
+      <li>Feature permissions (search, download, delete, protect, tag)</li>
+    </ul>
+
+    <h3>Aggregated Statistics</h3>
+    <ul>
+      <li>Call counts, total and average durations, broken down by direction</li>
+    </ul>
+
+    <p>
+      The MCP server does <strong>not</strong> access raw audio files directly.
+      Transcripts are generated by YouWire's speech recognition engine and stored within YouWire's infrastructure.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>3. How Data is Used</h2>
+    <p>Data accessed through YouWire MCP is used solely to:</p>
+    <ul>
+      <li>Respond to your queries within the Claude conversation</li>
+      <li>Return search results, transcripts, and statistics as requested</li>
+      <li>Perform write operations (tag management) that you explicitly initiate</li>
+    </ul>
+    <p>
+      We do <strong>not</strong> use your call recording data to train AI models,
+      for advertising, or for any purpose beyond fulfilling your immediate request.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>4. Data Storage and Retention</h2>
+    <h3>MCP Server (Session Data)</h3>
+    <p>
+      The YouWire MCP server does <strong>not persistently store</strong> your call recording data.
+      Data retrieved during a session is held in memory only for the duration of the API request
+      and is not written to disk or retained after the response is sent.
+    </p>
+    <h3>Authentication</h3>
+    <p>YouWire MCP supports the following authentication methods:</p>
+    <ul>
+      <li><strong>OAuth 2.1 + PKCE</strong> (recommended): OAuth access tokens and refresh tokens are stored securely by Anthropic's infrastructure as part of the connector authentication flow. These are encrypted at rest and used solely to authenticate your requests to the YouWire MCP server.</li>
+      <li><strong>API key / session token</strong>: For non-OAuth connections (e.g., Claude Desktop direct configuration), a session token may be used. This token is managed within your client configuration and is not stored by the MCP server itself.</li>
+    </ul>
+    <ul>
+      <li>OAuth Access tokens expire after <strong>1 hour</strong> (auto-refreshed)</li>
+      <li>OAuth Refresh tokens expire after <strong>30 days</strong></li>
+      <li>Tokens are invalidated when you disconnect the connector in Claude settings</li>
+    </ul>
+    <h3>YouWire Platform Data</h3>
+    <p>
+      Call recordings, transcripts, and tags remain stored within YouWire's infrastructure
+      under your organization's account. Retention policies are governed by your YouWire
+      service agreement and applicable regulations.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>5. Data Transmission Security</h2>
+    <ul>
+      <li>All communication between Claude and YouWire MCP is encrypted using <strong>HTTPS / TLS 1.3</strong></li>
+      <li>OAuth authentication uses <strong>OAuth 2.1 + PKCE</strong> — your YouWire password is never shared with Anthropic or Claude</li>
+      <li>Access is scoped per-user based on YouWire's <strong>operating_range</strong> permission model — the MCP server cannot access data beyond your authorized scope</li>
+      <li>Security events and access logs are automatically recorded within YouWire's infrastructure</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6. Data Sharing</h2>
+    <p>We do not sell, rent, or share your data with third parties except:</p>
+    <ul>
+      <li><strong>Anthropic</strong>: As part of the MCP connector infrastructure, request/response data passes through Anthropic's servers. Please refer to <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a> for details.</li>
+      <li><strong>Legal obligations</strong>: If required by applicable law or regulation.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7. Your Rights (APPI)</h2>
+    <p>Under Japan's Act on the Protection of Personal Information, you have the right to:</p>
+    <ul>
+      <li>Request disclosure of personal information we hold about you</li>
+      <li>Request correction of inaccurate personal information</li>
+      <li>Request deletion of your personal information</li>
+      <li>Request suspension of use of your personal information</li>
+    </ul>
+    <p>To exercise these rights, please contact us at the address below.</p>
+  </div>
+
+  <div class="card">
+    <h2>8. Geographic Availability</h2>
+    <p>
+      YouWire MCP is currently available to organizations based in <strong>Japan only</strong>.
+      Data is processed and stored within infrastructure compliant with Japanese data protection laws.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Changes will be posted on this page
+      with an updated effective date. Continued use of YouWire MCP after changes constitutes
+      acceptance of the updated policy.
+    </p>
+
+    <div class="contact-box">
+      <h3>Contact Us</h3>
+      <p>For privacy-related inquiries or to exercise your rights:</p>
+      <p><strong>Geekfeed Inc.</strong></p>
+      <p>〒111-0056 東京都台東区小島２－２０－７ 扶桑御徒町ビル２階</p>
+      <p>Email: <a href="mailto:support@youwire.jp">support@youwire.jp</a></p>
+      <p>Web: <a href="https://www.youwire.jp" target="_blank">https://www.youwire.jp</a></p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Geekfeed Inc. · <a href="index.html">YouWire MCP Documentation</a> · <a href="https://www.youwire.jp">youwire.jp</a></p>
+</footer>
+
+</body>
+</html>
